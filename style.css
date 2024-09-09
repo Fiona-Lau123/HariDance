@@ -16,27 +16,6 @@ body{
     background-color: #fffbf1;
 }
 
-
-img.home_img_1{
-    display: block;
-    width: 450px;
-    height: 513px;
-    margin-left: 10%;
-    margin-top: 50px;
-    float: left;
-    margin-right: 10%;
-}
-
-img.home_img_2{
-    display: block;
-    width: 450px;
-    height: 513px;
-    margin-left: 10%;
-    margin-top: 20%;
-    float: right;
-    margin-right: 10%;
-}
-
 h1{
     font-family: "Magra", sans-serif;
     font-size: 100px;
@@ -44,11 +23,10 @@ h1{
     padding-top: 7%;
 }
 
-
 h2{
     font-family: "Cinzel Decorative", serif;
+    text-align: center;
     font-size: 60px;
-    text-align: right;
 }
 
 .home_sub2{
@@ -59,24 +37,22 @@ h2{
     padding-left: 15%;
 }
 
-.home_content2{
+.home_content{
     font-size: 30px;
-    margin: 50px;
+    margin: 60px;
+    text-align: center;
+    background-image: url("home_background.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
 }
-
-h3{
-    font-size: 30px;
-    margin: 50px;
-}
-
 
 .contact{
     font-family: "Cinzel Decorative", serif;
     font-size: 60px;
     text-align: center;
-    padding-left: 210px;
-}
 
+}
 
 nav {
     position: fixed;
@@ -89,6 +65,7 @@ nav {
     height: 100px;
     background-color: #fdcba9;
 }
+
 nav .logo {
     float: left;
     width: 40%;
@@ -98,6 +75,7 @@ nav .logo {
     font-size: 24px;
     color: black;
 }
+
 nav .links {
     float: right;
     padding: 0;
@@ -108,9 +86,11 @@ nav .links {
     justify-content: space-around;
     align-items: center;
 }
+
 nav .links li {
     list-style: none;
 }
+
 nav .links a {
     display: block;
     padding: 1em;
@@ -120,10 +100,12 @@ nav .links a {
     color: black;
     text-decoration: none;
 }
+
 #nav-toggle {
     position: absolute;
     top: -100px;
 }
+
 nav .icon-burger {
     display: none;
     position: absolute;
@@ -131,6 +113,7 @@ nav .icon-burger {
     top: 50%;
     transform: translateY(-50%);
 }
+
 nav .icon-burger .line {
     width: 30px;
     height: 5px;
@@ -146,6 +129,50 @@ nav .icon-burger .line {
     width: 100%;
 }
 
+.home-item1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    max-width: 1200px; /* Adjust width as needed */
+    margin: 10px auto; /* Center the cards */
+}
+
+.home-item2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    max-width: 1200px; /* Adjust width as needed */
+    margin: 10px auto; /* Center the cards */
+}
+
+.home_img_1{
+    display: block;
+    width: 450px;
+    height: 513px;
+    margin-left: 7%;
+    margin-top: 2%;
+    float: left;
+    margin-right: 7%;
+}
+
+.home_img_2{
+    display: block;
+    width: 450px;
+    height: 513px;
+    margin-left: 5%;
+    margin-top: 2%;
+    float: right;
+    margin-right: 5%;
+}
+
+
+
 .class-item {
     display: flex;
     align-items: center;
@@ -153,7 +180,6 @@ nav .icon-burger .line {
     border-radius: 10px;
     overflow: hidden;
     padding: 20px;
-    width: 100%;
     max-width: 1200px; /* Adjust width as needed */
     margin: 10px auto; /* Center the cards */
 }
@@ -165,6 +191,7 @@ nav .icon-burger .line {
 
 .class_content {
     flex: 2;
+    margin: 3%;
 }
 
 .class_content p{
@@ -173,17 +200,75 @@ nav .icon-burger .line {
 }
 
 .class_content h2{
-    font-size: 3em;
+    font-size: 3.5em;
     text-align: center;
-    margin-bottom: 50px;
+    margin: 2%;
 }
 
 .class_content h3{
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: center;
+    margin: 0px;
+}
+
+.price{
+    font-size: 45px;
+}
+
+.container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+   
+img {
+    max-width: 100%;
+    max-height:100%;
+}
+   
+.text {
+    font-size: 70px;
+}
+
+.contact_p{
+    text-align: center;
+    font-size: 2.8em;
 }
 
 
+.membership_info{
+    text-align: center;
+    font-size: 39px;
+}
+
+
+ul li {
+    list-style-position: inside;
+}
+
+
+footer {
+    font-size: 25px;
+    text-align: center;
+    padding: 1%;
+    background-color: #ecb690;
+    color: white;
+}
+
+
+.contact_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+}
+
+footer{
+    position: relative;
+    bottom: 0%;
+}
 
 @media screen and (max-width: 1045px) {
     nav .logo {
@@ -241,44 +326,53 @@ nav .icon-burger .line {
 
     }
 
+    .class-item {
+        flex-direction: column; /* Stack image and content vertically */
+        align-items: center; /* Center content */
+    }
+
+    .class-image {
+        max-width: 100%; /* Ensure the image takes full width on mobile */
+    }
+
+    .class_content {
+        text-align: center; /* Center the text content */
+        padding: 10px; /* Add some padding for better spacing */
+        max-width: 100%;
+        margin: 0px;
+    }
+
+    .class_content h2 {
+        font-size: 2.9em; /* Adjust font size for better readability on mobile */
+        margin-bottom: 20px; /* Adjust margin for spacing */
+    }
+
+    .class_content h3{
+        font-size: 1.7em;
+    }
+
+    .class_content p {
+        font-size: 1.2em; /* Adjust font size for better readability on mobile */
+    }
+
+    p.contact_p{
+        font-size: 2.1em;
+    }
+
+    ul.membership_info{
+        font-size: 2em;
+        padding: 0%;
+    }
+
+    .home-item1{
+        flex-direction: column; /* Stack image and content vertically */
+        align-items: center; /* Center content */
+    }
+
+    .home-item2{
+        flex-direction: column-reverse; /* Stack image and content vertically */
+        align-items: center; /* Center content */
+    }
 }
 
 
-.contact_p{
-    text-align: center;
-    font-size: 40px;
-}
-
-
-.membership_info{
-    text-align: center;
-    font-size: 39px;
-}
-
-
-ul li {
-    list-style-position: inside;
- }
-
-
- footer {
-    font-size: 25px;
-    text-align: center;
-    padding: 1%;
-    background-color: #ecb690;
-    color: white;
-  }
-
-
-  .contact_img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-
-  }
-
- footer{
-    position: relative;
-    bottom: 0%;
- }
