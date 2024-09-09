@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
    <head>
-      
+
+      <!--Link the page to the css -->
       <link rel="stylesheet" href="style.css">
       <title>title</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+      <!--This codes out the navigation bar while
+       also condsidering it in responsive mode-->
       <nav>
          <input id="nav-toggle" type="checkbox">
          <div class="logo">
@@ -13,11 +16,15 @@
                alt="Image is missing" 
                style="width:350px;height:155px;"></a>
          </div>
+
+         <!--Links to the other pages-->
          <ul class="links">
             <li><a href="index.html">HOME</a></li>
             <li><a href="classes.html">CLASSES</a></li>
             <li><a class="active" href="contact.html">CONTACT</a></li>
          </ul>
+
+         <!--Used when responsive-->
          <label for="nav-toggle" class="icon-burger">
             <div class="line"></div>
             <div class="line"></div>
@@ -29,38 +36,46 @@
    </head>
 
    <body>
-      <link href="https://fonts.googleapis.com/css2?family=Magra:wght@400;700&family=Seaweed+Script&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-      
+      <!--Links to access the font-->
+      <link href="https://fonts.googleapis.com/css2?family=Magra:wght@400;700&
+      family=Seaweed+Script&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&
+      family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" 
+      rel="stylesheet">
 
-      <h1>
+      <h1> <!--Title for contact page -->
          CONTACT 
       </h1>
 
-      <h2 class ="contact">
+
+      <h2 class ="contact"> <!--Subtitle for contact page -->
          Membership Inquiries 
       </h2>
 
+      <!--The content for the contact page-->
       <p class ="contact_p">
-         To join the club, please send the following details to enquiries@haridanceclub.co.nz.
+         To join the club, please send the following details 
+         to enquiries@haridanceclub.co.nz.
       </p>
 
-
+      <!--Points on what is required to join the membership-->
       <ul class = "membership_info">
          <li>Your full name</li>
          <li>Your physical address</li>
          <li>proof of address (eg a copy of the power bill)</li>
        </ul>
 
+       <!--Image that displays on the bottom-->
        <div class="contact_background">
-         <img class="contact_img" src="contact.png" alt="Image is missing">
+         <img class="contact_img" src="contact.png" 
+         alt="Image is missing">
       </div>
 
-
+      <!--Code for the footer at the bottom-->
        <footer>
          <a href="mailto: enquiries@haridanceclub.co.nz">
             Email: enquiries@haridanceclub.co.nz </a>
        </footer>
 
-
    </body>
+</html>

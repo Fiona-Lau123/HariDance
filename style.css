@@ -1,59 +1,67 @@
 a{
-    color: black;
+    color: black; /* Changing the colour to black*/
     text-decoration: none;
 }
 
+/* Navigation bar when mouse is on it */
 ul.links a:hover {
-    text-decoration: underline;
+    text-decoration: underline; 
   }
 
 ul.links a.active {
     text-decoration: underline;
 }
 
+/* Overall body */
 body{
     margin: 0;
-    background-color: #fffbf1;
+    background-color: #fffbf1; /* Adjust background colour */
 }
 
+/* Adjustment for h1*/
 h1{
-    font-family: "Magra", sans-serif;
-    font-size: 100px;
+    font-family: "Magra", sans-serif; /* Change font family */
+    font-size: 100px; /* Change to make it to the desired size */
     text-align: center;
     padding-top: 7%;
 }
 
+/* Adjust for h2*/
 h2{
     font-family: "Cinzel Decorative", serif;
-    text-align: center;
-    font-size: 60px;
+    text-align: center; /* Make text in the center */
+    font-size: 60px; /* Change font size to fit */
 }
 
+/* Adjust for home_sub2 class */
 .home_sub2{
     font-family: "Cinzel Decorative", serif;
     padding-top: 20%;
     font-size: 60px;
-    text-align: left;
-    padding-left: 15%;
+    text-align: left; /* Text will be on the left side */
+    padding-left: 15%; /* Padding to position it well*/
 }
 
+/* Adjust for home_content class */
 .home_content{
     font-size: 30px;
     margin: 60px;
     text-align: center;
-    background-image: url("home_background.png");
-    background-repeat: no-repeat;
+    background-image: url("home_background.png"); 
+    background-repeat: no-repeat; /* Background doesn't repeat */
+    background-position: center;
     width: 100%;
     height: 100%;
 }
 
+/* Adjust for contact class */
 .contact{
     font-family: "Cinzel Decorative", serif;
     font-size: 60px;
     text-align: center;
-
 }
 
+/* Adjust for nav*/
 nav {
     position: fixed;
     z-index: 10;
@@ -62,12 +70,13 @@ nav {
     top: 0;
     font-family: 'Montserrat', sans-serif;
     padding: 0 5%;
-    height: 100px;
+    height: 100px; /* Adjust to the desired height */
     background-color: #fdcba9;
 }
 
+/* Adjust nav .logo */
 nav .logo {
-    float: left;
+    float: left; /* Logo on left side */
     width: 40%;
     height: 100%;
     display: flex;
@@ -76,8 +85,9 @@ nav .logo {
     color: black;
 }
 
+/* Adjust to nav .links */
 nav .links {
-    float: right;
+    float: right; /* Links on the right */
     padding: 0;
     margin: 0;
     width: 60%;
@@ -87,25 +97,29 @@ nav .links {
     align-items: center;
 }
 
+/* Adjust nav .links li */
 nav .links li {
     list-style: none;
 }
 
+/* Adjust nav .links a */
 nav .links a {
-    display: block;
+    display: block; /* Display as block */
     padding: 1em;
     font-size: 40px;
-    font-family: "Magra", sans-serif;
+    font-family: "Magra", sans-serif; /* Change font for the links*/
     font-weight: bold;
     color: black;
     text-decoration: none;
 }
 
+/* Adjust nav-toggle */
 #nav-toggle {
     position: absolute;
     top: -100px;
 }
 
+/* Adjust for the responsive bar */
 nav .icon-burger {
     display: none;
     position: absolute;
@@ -114,6 +128,7 @@ nav .icon-burger {
     transform: translateY(-50%);
 }
 
+/* Adjust to the burger menu line */
 nav .icon-burger .line {
     width: 30px;
     height: 5px;
@@ -123,15 +138,18 @@ nav .icon-burger .line {
     transition: all .3s ease-in-out;
 }
 
+/* Adjust contact_background */
 .contact_background{
     background-image: url("background_img.png");
     background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
 }
 
+/* Adjust home-item1 */
 .home-item1{
     display: flex;
-    align-items: center;
+    align-items: center; /* Items are aligned in center*/
     gap: 20px;
     border-radius: 10px;
     overflow: hidden;
@@ -140,9 +158,10 @@ nav .icon-burger .line {
     margin: 10px auto; /* Center the cards */
 }
 
+/* Adjust home-item2 */
 .home-item2{
     display: flex;
-    align-items: center;
+    align-items: center; /* Items are aligned in center*/
     gap: 20px;
     border-radius: 10px;
     overflow: hidden;
@@ -151,31 +170,32 @@ nav .icon-burger .line {
     margin: 10px auto; /* Center the cards */
 }
 
+/* Adjust home-img_1 */
 .home_img_1{
-    display: block;
+    display: block; /* Display into a block*/
     width: 450px;
     height: 513px;
     margin-left: 7%;
     margin-top: 2%;
-    float: left;
+    float: left; /* Adjust image to the left */
     margin-right: 7%;
 }
 
+/* Adjust home-img2 */
 .home_img_2{
-    display: block;
+    display: block; /* Display into a block*/
     width: 450px;
     height: 513px;
     margin-left: 5%;
     margin-top: 2%;
-    float: right;
+    float: right; /* Adjust image to the right*/
     margin-right: 5%;
 }
 
-
-
+/* Adjust class-item class */
 .class-item {
     display: flex;
-    align-items: center;
+    align-items: center; /* Align items in th center */
     gap: 20px;
     border-radius: 10px;
     overflow: hidden;
@@ -184,98 +204,112 @@ nav .icon-burger .line {
     margin: 10px auto; /* Center the cards */
 }
 
+/* Adjust class-image */
 .class_image {
     max-width: 300px; /* Adjust as needed */
     height: auto;
 }
 
+/* Adjust class_content */
 .class_content {
     flex: 2;
-    margin: 3%;
+    margin: 3%; /* Adjust to fit everything */
 }
 
+/* Adjust class_content p */
 .class_content p{
-    font-size: 1.4em;
+    font-size: 1.4em; /* Adjust font size */
     text-align: center;
 }
 
+/* Adjust class_content h2 */
 .class_content h2{
     font-size: 3.5em;
     text-align: center;
-    margin: 2%;
+    margin: 2%; /* Adjust margin to fit everything*/
 }
 
+/* Adjust class_content h3 */
 .class_content h3{
     font-size: 1.8em;
     text-align: center;
     margin: 0px;
 }
 
+/* Adjust price class*/
 .price{
-    font-size: 45px;
+    font-size: 45px; /* Change font size */
 }
 
+/* Adjust container */
 .container {
     display: grid;
     align-items: center; 
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5px;
 }
-   
+
+/* Adjust img2 */
 img {
-    max-width: 100%;
-    max-height:100%;
+    max-width: 100%; /* Maximum width for all img*/
+    max-height:100%; /* Maximum height for all img */
 }
    
+/* Adjust text */
 .text {
     font-size: 70px;
 }
 
+/* Adjust contact_p*/
 .contact_p{
     text-align: center;
     font-size: 2.8em;
 }
 
-
+/* Adjust membership_info*/
 .membership_info{
-    text-align: center;
+    text-align: center; /* Text are aligned to center*/
     font-size: 39px;
 }
 
-
+/* Adjust ul li */
 ul li {
     list-style-position: inside;
 }
 
-
+/* Adjust footer */
 footer {
     font-size: 25px;
     text-align: center;
     padding: 1%;
-    background-color: #ecb690;
-    color: white;
-}
-
-
-.contact_img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-
-}
-
-footer{
+    background-color: #ecb690; /* Background colour change */
+    color: white; 
     position: relative;
     bottom: 0%;
 }
 
+/* Adjust contact-img */
+.contact_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%; /* Width of the image */
+    background-image: url("background_img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* When the website is in responsive mode */
 @media screen and (max-width: 1045px) {
+    /* Adjust for nav .logo */
     nav .logo {
         float: none;
         width: auto;
         justify-content: center;
     }
+
+    /* Adjust nav .links when the navigation bar is responsive mode*/
     nav .links {
         float: none;
         position: fixed;
@@ -313,7 +347,7 @@ footer{
     }
 
     h2{
-        text-align: center;
+        text-align: center;/* Align text to the center */
         margin-left: 2%;
     }
 
@@ -327,12 +361,12 @@ footer{
     }
 
     .class-item {
-        flex-direction: column; /* Stack image and content vertically */
+        flex-direction: column; /* Stack everything vertically */
         align-items: center; /* Center content */
     }
 
     .class-image {
-        max-width: 100%; /* Ensure the image takes full width on mobile */
+        max-width: 100%; /* Ensure the image is at full width */
     }
 
     .class_content {
@@ -343,7 +377,7 @@ footer{
     }
 
     .class_content h2 {
-        font-size: 2.9em; /* Adjust font size for better readability on mobile */
+        font-size: 2.9em; /* Adjust font size */
         margin-bottom: 20px; /* Adjust margin for spacing */
     }
 
@@ -352,7 +386,7 @@ footer{
     }
 
     .class_content p {
-        font-size: 1.2em; /* Adjust font size for better readability on mobile */
+        font-size: 1.2em; /* Adjust font size */
     }
 
     p.contact_p{
@@ -365,14 +399,17 @@ footer{
     }
 
     .home-item1{
-        flex-direction: column; /* Stack image and content vertically */
+        flex-direction: column; /* Stack everything vertically */
         align-items: center; /* Center content */
     }
 
     .home-item2{
-        flex-direction: column-reverse; /* Stack image and content vertically */
+        flex-direction: column-reverse; /* Reverse the stacking */
         align-items: center; /* Center content */
     }
+
+    .contact_img{
+        width: 100%; /* Width of the img */
+        height: auto;
+    }
 }
-
-
