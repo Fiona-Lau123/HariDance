@@ -47,7 +47,7 @@ h2{
     font-size: 30px;
     margin: 60px;
     text-align: center;
-    background-image: url("home_background.png"); 
+    background-image: url("haridance_img/home_background.png"); 
     background-repeat: no-repeat; /* Background doesn't repeat */
     background-position: center;
     width: 100%;
@@ -140,7 +140,7 @@ nav .icon-burger .line {
 
 /* Adjust contact_background */
 .contact_background{
-    background-image: url("background_img.png");
+    background-image: url("haridance_img/background_img.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
