@@ -12,6 +12,11 @@ ul.links a.active {
     text-decoration: underline;
 }
 
+/* Adjust ul li */
+ul li {
+    list-style-position: inside;
+}
+
 /* Overall body */
 body{
     margin: 0;
@@ -270,11 +275,6 @@ img {
 .membership_info{
     text-align: center; /* Text are aligned to center*/
     font-size: 39px;
-}
-
-/* Adjust ul li */
-ul li {
-    list-style-position: inside;
 }
 
 /* Adjust footer */
